@@ -1,0 +1,5 @@
+/.vscode/
+/Convert/node_modules/
+/Convert/.env
+/Bot/node_modules/
+/Bot/.env

@@ -1,0 +1,43 @@
+{
+	"name": "convert",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "env PORT=1488 LOGDIR=/home/ubuntu/data/LOGS DATADIR=/home/ubuntu/data/DATA LENGTHSEC=1800 nodemon --prof ./src/server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"fluent-ffmpeg": "^2.1.2",
+		"morgan": "^1.10.0",
+		"rotating-file-stream": "^2.1.1",
+		"winston": "^3.3.3"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"eslint": "^7.12.1",
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-jest-enzyme": "^7.1.2",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-plugin-babel": "^5.3.1",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jest": "^24.1.0",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.21.5",
+		"eslint-plugin-unicorn": "^23.0.0",
+		"jshint": "^2.12.0",
+		"localtunnel": "^2.0.0",
+		"nodemon": "^2.0.4",
+		"prettier": "^2.1.2"
+	},
+	"eslintConfig": {
+		"extends": "plugin:unicorn/recommended"
+	}
+}
