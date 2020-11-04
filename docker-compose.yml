@@ -9,11 +9,11 @@ services:
       - '3000:3000'
       - '9229:9229'
     environment:
-      - 'TGTOKEN=1218726205:AAFLJSzFQXuxhQ1c4Wj-mSvguIoPCxpajHk'
-      - 'ADDRESS=https://4e566e968a38.ngrok.io'
+      - 'TGTOKEN='
+      - 'ADDRESS='
       - 'CONVADDR=http://convert:1488/api/v1/split'
-      - 'LOGDIR=/home/ubuntu/data/LOGS'
-      - 'DATADIR=/home/ubuntu/data/DATA'
+      - 'LOGDIR='
+      - 'DATADIR='
       - 'LENGTHSEC=1800'
     depends_on:
       - 'convert'
@@ -28,8 +28,8 @@ services:
       - '7000:7000'
       environment: 
         - 'PORT=1488' 
-        - 'LOGDIR=/home/ubuntu/data/LOGS'
-        - 'DATADIR=/home/ubuntu/data/DATA'
+        - 'LOGDIR='
+        - 'DATADIR='
         - 'LENGTHSEC=1800'
 volumes:
   ytcmp:
